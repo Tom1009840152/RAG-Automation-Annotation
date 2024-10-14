@@ -77,4 +77,4 @@ python src/model_inference.py
 
 ## 联系方式
 
-如有任何问题或建议，请联系 [your email]。
+如有任何问题或建议，请联系 [li_zhichao2022@163.com]。
