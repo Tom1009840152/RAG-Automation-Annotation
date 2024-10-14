@@ -1,0 +1,12 @@
+RAG-Automation-Annotation/
+├── README.md
+├── requirements.txt
+├── src/
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   ├── model_inference.py
+│   └── utils.py
+└── data/
+    ├── raw/
+    │   └── historical_data.csv
+    └── processed/
