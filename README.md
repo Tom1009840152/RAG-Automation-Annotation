@@ -1,9 +1,3 @@
-
-
-Certainly! Below is a draft for an English version of your README file based on the project description and code you provided:
-
----
-
 # RAG Automation Annotation Project
 
 ## Overview
