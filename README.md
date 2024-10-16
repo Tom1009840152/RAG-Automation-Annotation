@@ -4,6 +4,9 @@
 
 This project aims to automate the annotation process for RAG (Retrieval-Augmented Generation) applications by leveraging historical log data. The goal is to reduce manual annotation efforts by using a model to find similar previously annotated data and automatically annotate new data based on these similarities.
 
+![image](https://github.com/user-attachments/assets/3883519f-9963-49b1-bc89-4b7c9ac992d3)
+
+
 ## Project Structure
 
 ```
