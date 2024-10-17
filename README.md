@@ -47,6 +47,9 @@ RAG-Automation-Annotation/
 ### Usage
 
 1. **Data Preprocessing**:
+![Uploading 未命名文件 (2).png…]()
+
+
    - Run `data_preprocessing.py` to clean and preprocess the raw data.
    ```bash
    python src/data_preprocessing.py
