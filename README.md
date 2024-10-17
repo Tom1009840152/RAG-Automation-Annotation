@@ -47,7 +47,8 @@ RAG-Automation-Annotation/
 ### Usage
 
 1. **Data Preprocessing**:
-![Uploading 未命名文件 (2).png…]()
+![未命名文件 (2)](https://github.com/user-attachments/assets/36a67c76-fcd3-4e39-9db6-6ff7591235c0)
+
 
 
    - Run `data_preprocessing.py` to clean and preprocess the raw data.
