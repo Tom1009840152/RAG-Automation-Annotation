@@ -7,28 +7,11 @@ This project aims to automate the annotation process for RAG (Retrieval-Augmente
 ![image](https://github.com/user-attachments/assets/3883519f-9963-49b1-bc89-4b7c9ac992d3)
 
 
-## Project Structure
-
-```
-RAG-Automation-Annotation/
-├── README.md
-├── requirements.txt
-├── src/
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   ├── model_inference.py
-│   └── utils.py
-└── data/
-    ├── raw/
-    │   └── historical_data.csv
-    └── processed/
-```
-
 ## Getting Started
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.10
 - Required Python packages listed in `requirements.txt`
 
 ### Installation
