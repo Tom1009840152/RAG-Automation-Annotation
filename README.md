@@ -1,4 +1,4 @@
-# RAG Automation Annotation Project
+# RAG Automation Annotation Project(is still under construction)
 
 ## Overview
 
@@ -39,23 +39,30 @@ This project aims to automate the annotation process for RAG (Retrieval-Augmente
    python src/data_preprocessing.py
    ```
 
-2. **Model Training**:
-   - Train the similarity model using `model_training.py`.
+2. **Training of classification models**:
+   - Train the classification model using `cat_model_train.py`.
    ```bash
-   python src/model_training.py
+   python src/cat_model_train.py
    ```
 
-3. **Model Inference**:
-   - Use `model_inference.py` to find similar historical annotations for new queries.
+3. **Evaluation of classification models**:
+   - Eval the classification model using `cat_model_eval.py`.
    ```bash
-   python src/model_inference.py
+   python src/cat_model_train.py
+   ```
+   
+4. **The use of classification models**:
+   - Use the classification model using `cat_model_use.py`.
+   ```bash
+   python src/cat_model_use.py
    ```
 
 ## Code Explanation
 
 - **`data_preprocessing.py`**: Handles loading and cleaning of raw data.
-- **`model_training.py`**: Trains a simple similarity model using TF-IDF and Nearest Neighbors.
-- **`model_inference.py`**: Finds similar historical annotations for new queries using the trained model.
+- **`cat_model_train.py`**: Trains a simple similarity model using TF-IDF and Nearest Neighbors.
+- **`cat_model_eval.py`**: Evaluate the previously trained model.
+- **`cat_model_use.py`**: Use the previously trained model.
 
 ## Contributing
 
