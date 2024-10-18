@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动标注系统</title>
+    <style>
+        #drop-area {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="drop-area">
+        拖拽文件到此处或点击上传
+        <input type="file" id="fileElem" multiple accept=".csv,.xlsx" style="display:none" onchange="handleFiles(this.files)">
+        <button id="fileSelect">选择文件</button>
+    </div>
+    <script>
+        let dropArea = document.getElementById('drop-area');
+        let fileElem = document.getElementById('fileElem');
+        let fileSelect = document.getElementById('fileSelect');
+
+        fileSelect.addEventListener('click', () => fileElem.click());
+
+        dropArea.addEventListener('dragover', (event) => {
+            event.preventDefault();
+            dropArea.classList.add('highlight');
+        });
+
+        dropArea.addEventListener('dragleave', () => dropArea.classList.remove('highlight'));
+
+        dropArea.addEventListener('drop', (event) => {
+            event.preventDefault();
+            dropArea.classList.remove('highlight');
+            let files = event.dataTransfer.files;
+            handleFiles(files);
+        });
+
+        function handleFiles(files) {
+            const formData = new FormData();
+            formData.append('file', files[0]);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.json())
+              .then(data => console.log(data))
+              .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
