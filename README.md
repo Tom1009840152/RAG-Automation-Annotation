@@ -1,4 +1,4 @@
-# RAG Automation Annotation Project(is under construction)
+# RAG Automation Annotation Project(under construction)
 
 ## Overview
 
